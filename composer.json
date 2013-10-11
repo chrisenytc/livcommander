@@ -1,0 +1,28 @@
+{
+    "name": "chrisenytc/livcommander",
+    "description": "Livia Command-Line Framework",
+    "keywords": ["commandline", "framework", "tasks"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher EnyTC",
+            "email": "chrisenytc@gmail.com",
+            "homepage": "http://chris.enytc.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/chrisenytc/livcommander/issues"
+    },
+    "minimum-stability": "dev",
+     "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Commander": "src/"
+        }
+    }
+}

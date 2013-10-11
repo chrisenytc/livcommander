@@ -1,0 +1,30 @@
+#!/usr/bin/env php
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Task Runner
+|--------------------------------------------------------------------------
+|
+| Load All Commands to use LivCommander
+|
+*/
+
+//AUTOLOADER
+require_once __DIR__ . '/../vendor/autoload.php';
+//AUTOLOADER
+
+//USE
+use Commander\LivCommander;
+//USE
+
+//Create new instance of LivCommander
+$livia = new LivCommander();
+
+//SetOption echo
+$livia->setOption('test', 'Test LivCommander', array(
+	array('name' => 'echo', 'command' => 'echo "\n LivCommander Tested Successfully"')
+));
+
+//Start LivCommander
+$livia->start($argv);
