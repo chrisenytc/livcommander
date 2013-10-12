@@ -15,7 +15,7 @@ class LivCommander extends MessageManager {
     */
 
     //LivCommander Version
-    const VERSION = '1.0.1';
+    const VERSION = '1.1.0';
     //LivCommander Version
 
     //Options List
@@ -56,6 +56,21 @@ class LivCommander extends MessageManager {
         {
             return FALSE;
         }
+    }
+
+    /**
+     * Provide a SearchEngine.
+     * @param string $name
+     * @param sarray $array
+     * @return mixed
+     */
+    private function searchForName($name, $array) {
+       foreach ($array as $key => $val) {
+           if ($val['name'] === $name) {
+               return $key;
+           }
+       }
+       return NULL;
     }
 
     /**
@@ -145,7 +160,7 @@ class LivCommander extends MessageManager {
      * @param string $input
      * @return void
      */
-     public function start($input)
+     public function bootstrap($input)
      {
         //Get Welcome Message
         $this->getMessage('welcome');
@@ -157,39 +172,36 @@ class LivCommander extends MessageManager {
             //Show Tasks start
             $this->getMessage('starttask');
             //Browse all the options array.
-            foreach ($this->options as $opt) {
-                //If command exists in options list
-                if(in_array($in, $opt))
-                {
-                    //Browse all the command array.
-                    foreach ($opt['data'] as $value) {
-                        //Run process with this command
-                        $this->process($value['name'], $value['command']);
-                    }
+            //If command exists in options list
+            if(in_array($in, $this->getOptions()))
+            {
+                //Find Option key
+                $key = $this->searchForName($in, $this->options);
+                //Browse all the command array.
+                foreach ($this->options[$key]['data'] as $value) {
+                    //Run process with this command
+                    $this->process($value['name'], $value['command']);
                 }
-                else if($in == 'help')
-                {
-                    //If shell input is help show list
-                    $this->showlist();
-                    break;
-                }
-                else
-                {
-                    //If command not exists show error
-                   $this->log('Command '.$in.' Not Found!', 'danger');
-                    exit(); 
-                }
+                
+            }
+            else if($in == 'help' || $in == '')
+            {
+                //If shell input is help show list
+                $this->showlist();
+            }
+            else
+            {
+                //If command not exists show error
+               $this->log('Command '.$in.' Not Found!', 'danger');
+                exit(); 
             }
             //Show Tasks end
             $this->getMessage('endtask');
         }
         else
         {
-            //If Shell input is not exists
-            $in = '';
-
-            //If command not exists show error
-            $this->log('Command '.$in.' Not Found!', 'danger');
+            //If shell input is blank show list
+            $this->showlist();
             exit();
         }
 

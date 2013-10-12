@@ -127,11 +127,11 @@ This method returns an ArrayList containing all the names of the options that ha
 $livia->getOptions();
 ```
 
-##### start($input)
+##### bootstrap($input)
 This method is responsible for starting the application and monitor the commands you type. 
 This method receives an input passed by the variable $argv.
 ```php
-$livia->start($argv);
+$livia->bootstrap($argv);
 ```
 
 ##### version()
@@ -172,7 +172,8 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 ## Release History
 
- * 2013-10-11   v1.0.1       Fixed MessageManager
+ * 2013-10-11   v1.1.0       Fixed StartManager and Provide a new Bootstrap.
+ * 2013-10-11   v1.0.1       Fixed MessageManager.
  * 2013-10-11   v1.0.0       Initial release. 
  * 2013-10-11   v1.0.0-RC1   Initial RC.
 

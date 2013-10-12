@@ -27,4 +27,4 @@ $livia->setOption('test', 'Test LivCommander', array(
 ));
 
 //Start LivCommander
-$livia->start($argv);
+$livia->bootstrap($argv);
