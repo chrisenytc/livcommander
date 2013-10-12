@@ -1,4 +1,4 @@
-# LivCommander [![Build Status](https://travis-ci.org/chrisenytc/livcommander.png?branch=master)](https://travis-ci.org/chrisenytc/livcommander)
+# LivCommander [![Build Status](https://travis-ci.org/chrisenytc/livcommander.png?branch=master)](https://travis-ci.org/chrisenytc/livcommander) [![Latest Stable Version](https://poser.pugx.org/chrisenytc/livcommander/v/stable.png)](https://packagist.org/packages/chrisenytc/livcommander) [![Total Downloads](https://poser.pugx.org/chrisenytc/livcommander/downloads.png)](https://packagist.org/packages/chrisenytc/livcommander)
 
 Livia Command-Line Framework
 
@@ -172,6 +172,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 ## Release History
 
- * 2013-10-11   v1.0.0-RC1   Initial release.
+ * 2013-10-11   v1.0.0       Initial release. 
+ * 2013-10-11   v1.0.0-RC1   Initial RC.
 
 ---

@@ -1,4 +1,8 @@
-v1.0.0-RC1:
+v1.0.0:
   date: 2013-10-11
   changes:
     - Initial release.
+v1.0.0-RC1:
+  date: 2013-10-11
+  changes:
+    - Initial RC.

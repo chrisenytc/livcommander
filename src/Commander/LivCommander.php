@@ -15,7 +15,7 @@ class LivCommander extends MessageManager {
     */
 
     //LivCommander Version
-    const VERSION = '1.0.0-RC1';
+    const VERSION = '1.0.0';
     //LivCommander Version
 
     //Options List
