@@ -1,8 +1,8 @@
 <?php namespace Commander;
 
 class MessageManager {
-	
-	/*
+    
+    /*
     |--------------------------------------------------------------------------
     | LivCommander -- Module MessageManager
     |--------------------------------------------------------------------------
@@ -19,22 +19,8 @@ class MessageManager {
     //Messages Path
 
     //Messages Path
-    private $path;
     private $message_path;
     //Messages Path
-
-    public function __construct()
-    {
-        //Check if the path is defined
-        if(empty($this->path))
-        {
-            $this->message_path = __DIR__.DIRECTORY_SEPARATOR.'messages'.DIRECTORY_SEPARATOR;
-        }
-        else
-        {
-            $this->message_path = $this->path;
-        }
-    }
 
     /**
      * Provide a AppNameManager.
@@ -65,7 +51,7 @@ class MessageManager {
      */
     public function setMessagePath($path)
     {
-        $this->path = $path;
+        $this->message_path = $path;
     }
 
     /**
@@ -86,6 +72,12 @@ class MessageManager {
      */
     private function fileReader($filename)
     {
+        //Check if the path is defined
+        if(empty($this->message_path))
+        {
+            $this->message_path = __DIR__.DIRECTORY_SEPARATOR.'messages'.DIRECTORY_SEPARATOR;
+        }
+
         //Read message file and return content
         $message = file_get_contents($this->message_path.$filename.'.livia');
         //Return the message

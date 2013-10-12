@@ -16,6 +16,8 @@ class LivCommanderTest extends \PHPUnit_Framework_TestCase
 
         $livia = new LivCommander();
 
+        $livia->setMessagePath(__DIR__.'/../src/Commander/messages/');
+
         $this->assertFileExists($livia->getMessagePath().DIRECTORY_SEPARATOR.'welcome.livia');
         $this->assertFileExists($livia->getMessagePath().DIRECTORY_SEPARATOR.'end.livia');
         $this->assertFileExists($livia->getMessagePath().DIRECTORY_SEPARATOR.'starttask.livia');

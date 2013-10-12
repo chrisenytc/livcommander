@@ -172,6 +172,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 ## Release History
 
+ * 2013-10-11   v1.0.1       Fixed MessageManager
  * 2013-10-11   v1.0.0       Initial release. 
  * 2013-10-11   v1.0.0-RC1   Initial RC.
 

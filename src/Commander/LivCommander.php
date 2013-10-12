@@ -15,7 +15,7 @@ class LivCommander extends MessageManager {
     */
 
     //LivCommander Version
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.1';
     //LivCommander Version
 
     //Options List
@@ -25,7 +25,6 @@ class LivCommander extends MessageManager {
     //Constructor
     public function __construct()
     {
-        parent::__construct();
         $this->options = array();
     }
 
