@@ -46,7 +46,8 @@ $livia->setOption('option_name', 'description', array(
 	array('name' => 'commandname', 'command' => 'command"')
 ));
 
-//Start bootstrap($argv);
+//Start LivCommander with stdinput
+$livia->bootstrap($argv);
 
 ```
 
