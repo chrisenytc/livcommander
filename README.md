@@ -1,4 +1,4 @@
-# LivCommander [![Build Status](https://travis-ci.org/chrisenytc/livcommander.png?branch=master)](https://travis-ci.org/chrisenytc/livcommander) [![Latest Stable Version](https://poser.pugx.org/chrisenytc/livcommander/v/stable.png)](https://packagist.org/packages/chrisenytc/livcommander) [![Total Downloads](https://poser.pugx.org/chrisenytc/livcommander/downloads.png)](https://packagist.org/packages/chrisenytc/livcommander)
+# LivCommander [![Build Status](https://travis-ci.org/chrisenytc/livcommander.png?branch=master)](https://travis-ci.org/chrisenytc/livcommander) [![Latest Stable Version](https://poser.pugx.org/chrisenytc/livcommander/v/stable.png)](https://packagist.org/packages/chrisenytc/livcommander) [![Total Downloads](https://poser.pugx.org/chrisenytc/livcommander/downloads.png)](https://packagist.org/packages/chrisenytc/livcommander) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisenytc/livcommander/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 Livia Command-Line Framework
 
@@ -11,18 +11,8 @@ LivCommander is a framework to create terminal applications and manage tasks for
 LivCommander is available on Packagist ([chrisenytc/livcommander](http://packagist.org/packages/chrisenytc/livcommander))
 and as such installable via [Composer](http://getcomposer.org/).
 
-##### Using composer
-
-```bash
-php composer.phar require chrisenytc/livcommander '1.1.0'
-```
-
-##### Using composer.json
-
 ```json
-"require": {
-	"chrisenytc/livcommander": "1.1.0"
-}
+php composer.phar require chrisenytc/livcommander '~1.0'
 ```
 
 If you do not use Composer, you can grab the code from GitHub, and use any
@@ -182,9 +172,9 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 ## Release History
 
- * 2013-10-11   v1.1.0       	Fixed StartManager and Provide a new Bootstrap.
- * 2013-10-11   v1.0.1       	Fixed MessageManager.
- * 2013-10-11   v1.0.0       	Initial release. 
- * 2013-10-11   v1.0.0-RC1   	Initial RC.
+ * 2013-10-11   v1.1.0       Fixed StartManager and Provide a new Bootstrap.
+ * 2013-10-11   v1.0.1       Fixed MessageManager.
+ * 2013-10-11   v1.0.0       Initial release. 
+ * 2013-10-11   v1.0.0-RC1   Initial RC.
 
 ---
